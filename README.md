@@ -1,10 +1,8 @@
 # Globalia Framework
 
----
-
 ## TODO
 
-Trouver un highlighter de html, css pour la doc.
+http://google-code-prettify.googlecode.com/svn/trunk/README.html
 
 
 ---
