@@ -1,4 +1,6 @@
-# framework
+# Globalia Framework
+
+[Documentation on globliadev](http://framework.globaliadev.ca)
 
 http://foundation.zurb.com/docs/components/visibility.html
 
