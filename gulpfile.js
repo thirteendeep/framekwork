@@ -1,6 +1,8 @@
 'use strict';
 
-var projet = "framework";
+var projet = "framework",
+    sass_path = "application/css/src/front/",
+    css_dist = "application/css/dist/";
 
 // Include Gulp & Tools We'll Use
 var gulp = require('gulp');
@@ -35,16 +37,16 @@ gulp.task('local', ['css'], function(){
 
 /* Compile sass, sourcemap, prefix and min sass files */
 gulp.task('sass', function () {
-    gulp.src('application/css/src/front/styles.scss')
+    gulp.src(sass_path + 'styles.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({errLogToConsole: true}))
     .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7", { cascade : true }))
     .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('application/css/dist/'))
+    .pipe(gulp.dest(css_dist))
     /* minify */
     .pipe(minifyCSS())
     .pipe(rename('styles.min.css'))
-    .pipe(gulp.dest('application/css/dist/'));
+    .pipe(gulp.dest(css_dist));
 });
 
 
@@ -52,7 +54,7 @@ gulp.task('sass', function () {
 /* Clean dist css folder */
 gulp.task('build-clean-css', function() {
     return gulp.src([
-        'application/css/dist/*',
+        css_dist + '*',
         ])
     .pipe($.clean());
 });
