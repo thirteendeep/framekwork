@@ -1,5 +1,5 @@
 <?php 
-include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php'); 
+include($_SERVER['DOCUMENT_ROOT'].'/core/app.config.php'); 
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
@@ -7,15 +7,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php');
 <head>
     <meta charset="utf-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Comédie Star</title>
+    <title><?php ?></title>
     <meta name="description" content="" />
     
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <!-- CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/application/css/dist/comediestar.css" />
+    <link rel="stylesheet" href="/application/css/dist/styles.min.css" />
 
     <!-- Twitter -->
     <meta name="twitter:site" content="" />
@@ -50,7 +49,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php');
             <div id="site-container">
                 <?php
                 include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/header.php');
-                include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.routing.php');
+                include($_SERVER['DOCUMENT_ROOT'].'/core/app.routing.php');
                 include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/footer.php');
                 ?>
             </div>

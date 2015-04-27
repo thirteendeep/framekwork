@@ -1,6 +1,6 @@
 'use strict';
 
-var projet = "comediestar";
+var projet = "framework";
 
 // Include Gulp & Tools We'll Use
 var gulp = require('gulp');
@@ -43,7 +43,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('application/css/dist/'))
     /* minify */
     .pipe(minifyCSS())
-    .pipe(rename(projet +'.min.css'))
+    .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('application/css/dist/'));
 });
 
@@ -68,7 +68,7 @@ gulp.task('build-clean-js', function() {
 // Compile and Automatically Prefix Scripts
 gulp.task('scripts', function () {
     return gulp.src([
-            'application/js/src/vendor/jquery-1.10.2.js',
+            'application/js/src/vendor/jquery-1.11.2.js',
             'application/js/src/vendor/parsley-fr.js',
             'application/js/src/vendor/parsley.min.js',
             'application/js/src/front/main.js',
