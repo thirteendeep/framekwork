@@ -14,7 +14,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/app.config.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/application/css/dist/styles.min.css" />
+    <link rel="stylesheet" href="/application/css/dist/styles.css" />
 
     <!-- Twitter -->
     <meta name="twitter:site" content="" />

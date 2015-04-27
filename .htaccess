@@ -1,8 +1,8 @@
 Options +FollowSymlinks
 RewriteEngine On
 
-RewriteRule ^$ /index.php?section=integration&content=index [L]
-RewriteRule ^/?$ /index.php?section=integration&content=index [L]
+RewriteRule ^$ /index.php?section=docs&content=index [L]
+RewriteRule ^/?$ /index.php?section=docs&content=index [L]
 RewriteRule ^gui/?$ /index.php?section=gui&content=index [L]
 RewriteRule ^docs/?$ /index.php?section=docs&content=index [L]
 

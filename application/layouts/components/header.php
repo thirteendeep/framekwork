@@ -1,1 +1,1 @@
-<?php echo ($content == "index") ? "selected" : "" ?>
+<?php //echo ($content == "index") ? "selected" : "" ?>

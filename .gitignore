@@ -1,2 +1,4 @@
 /psd
 /node_modules
+/application/css/dist
+/application/js/dist
