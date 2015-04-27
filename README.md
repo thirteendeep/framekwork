@@ -1,4 +1,4 @@
-# Globalia Framework
+# Framework
 
 [Documentation on globliadev](http://framework.globaliadev.ca)
 
