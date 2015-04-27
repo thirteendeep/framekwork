@@ -1,6 +1,6 @@
 <?php
 
-$site_name = "Framework";
+    $site_name = "Globalia Front Framework";
 
 
 ?>
