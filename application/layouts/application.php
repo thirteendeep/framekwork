@@ -70,7 +70,7 @@ include('/core/app.application.php');
 
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
        
-    <script src="/core/google-code-prettify/run_prettify.js?callback=prettify_replace"></script>
+    <script src="/application/js/src/docs/google-code-prettify/run_prettify.js?callback=prettify_replace"></script>
 
 
 
