@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+   DocumentRoot "E:\Program Files\wamp\www\technomtl_git\public"
+   ServerName innovation.local
+   ServerAlias 172.16.100.98
+  
+	<Directory "E:\Program Files\wamp\www\technomtl_git\public">
+		Options Indexes MultiViews FollowSymLinks
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
