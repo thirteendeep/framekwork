@@ -1,6 +1,6 @@
 # Globalia Front Framework
 
-* [Documentation](http://site.local/docs){:target="_blank"}
+* <a href="http://site.local/docs" target="_blank">Documentation</a>
 * [Routing](#Routing)
 * [Gulp](#getting-started-with-gulp)
 
