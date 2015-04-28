@@ -1,21 +1,32 @@
 # Globalia Front Framework
 
+* [Documentation](http://site.local/docs){:target="_blank"}
 * [Routing](#Routing)
 * [Gulp](#getting-started-with-gulp)
 
+---
+
 # Routing
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sequi officiis, impedit ducimus illum ipsam obcaecati dolor ab quasi error voluptatibus. Sapiente sunt, ut nisi maxime quae ad doloribus nemo.
 
-``` bash
-application/view/integration/index.php 
+### How it's works
+
+```
+http://site.local/[view]/[section]
+```
+
+```
+/application/view/integration/index.php 
 http://site.local/integration/index
 ```
 
-``` bash
-application/view/docs/index.php
+```
+/application/view/docs/index.php
 http://site.local/docs/index
 ```
 
+---
 
 
 # Getting Started with gulp
