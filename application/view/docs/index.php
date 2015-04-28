@@ -12,7 +12,7 @@
         </p>
         <div class="row">
             <div class="large-6 columns">
-                <?php include('/application/layouts/docs/components/block-grid.php'); ?>
+                <?php //include('/application/view/docs/components/block-grid.php'); ?>
             </div>
             <div class="large-6 columns">
                 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
@@ -35,7 +35,7 @@
     <div class="large-12 column">
         <h1>Mixins</h1>
         <?php
-        include('/application/layouts/docs/components/px-to-rem.php');
+        include('/application/view/docs/components/px-to-rem.php');
         ?>
     </div>
 </div>

@@ -1,8 +1,8 @@
 <?php 
 if ($section) {
-    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/'.$section."/".$content.".php");
+    include($_SERVER['DOCUMENT_ROOT'].'/application/view/'.$section."/".$content.".php");
 }
 else {
-    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/docs/index.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/view/docs/index.php');
 }
 ?>

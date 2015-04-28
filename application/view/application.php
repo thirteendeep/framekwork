@@ -49,9 +49,9 @@ include('/core/app.application.php');
         <body onload="prettyPrint();">
             <div id="site-container">
                 <?php
-                include($root.'/application/layouts/components/header.php');
+                include($root.'/application/view/integration/components/header.php');
                 include($root.'/core/app.body.php');
-                include($root.'/application/layouts/components/footer.php');
+                include($root.'/application/view/integration/components/footer.php');
                 ?>
             </div>
 

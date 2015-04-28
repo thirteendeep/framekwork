@@ -1,5 +1,5 @@
 <?php
     session_start();
-    include('application/layouts/application.php');
+    include('application/view/application.php');
 
 ?>
