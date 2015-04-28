@@ -1,6 +1,22 @@
-# Globalia Framework
+# Globalia Front Framework
 
+* [Routing](#Routing)
 * [Gulp](#getting-started-with-gulp)
+
+# Routing
+
+
+``` bash
+application/view/integration/index.php 
+http://site.local/integration/index
+```
+
+``` bash
+application/view/docs/index.php
+http://site.local/docs/index
+```
+
+
 
 # Getting Started with gulp
 
@@ -16,17 +32,7 @@ $ npm install --global gulp
 $ npm install --save-dev gulp
 ```
 
-#### 3. Create a `gulpfile.js` at the root of your project:
-
-```js
-var gulp = require('gulp');
-
-gulp.task('default', function() {
-  // place code for your default task here
-});
-```
-
-#### 4. Run gulp:
+#### 3. Run gulp:
 
 ```sh
 $ gulp
@@ -35,6 +41,11 @@ $ gulp
 The default task will run and do nothing.
 
 To run individual tasks, use `gulp <task> <othertask>`.
+
+* List of tasks
+	* watch-sass
+	* css
+	* js
 
 
 
