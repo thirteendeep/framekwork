@@ -52,8 +52,6 @@ $ npm install --save-dev gulp
 $ gulp
 ```
 
-The default task will run and do nothing.
-
 To run individual tasks, use `gulp <task> <othertask>`.
 
 * List of tasks
