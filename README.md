@@ -1,5 +1,7 @@
 # Globalia Framework
 
+* [Gulp](#getting-started-with-gulp)
+
 # Getting Started with gulp
 
 #### 1. Install gulp globally:
