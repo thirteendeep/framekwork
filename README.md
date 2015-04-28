@@ -11,7 +11,7 @@
 ### How it's works
 
 ```
-http://site.local/[view]/[section(optional)]
+http://site.local/[view]/[section](optional)
 ```
 ```
 /application/view/gui/index.php
