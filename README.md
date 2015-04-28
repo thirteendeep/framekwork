@@ -15,6 +15,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sequi officiis, 
 ```
 http://site.local/[view]/[section]
 ```
+```
+/application/view/gui/index.php
+http://site.local/gui/index
+```
 
 ```
 /application/view/integration/index.php 
@@ -22,9 +26,11 @@ http://site.local/integration/index
 ```
 
 ```
-/application/view/docs/index.php
-http://site.local/docs/index
+/application/view/integration/index.php 
+http://site.local/integration/index
 ```
+
+
 
 ---
 
