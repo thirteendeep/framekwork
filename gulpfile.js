@@ -30,7 +30,7 @@ gulp.task('js', function() {
 });
 
 // Build Production Files, and watch
-gulp.task('local', ['css'], function(){
+gulp.task('watch-sass', ['css'], function(){
     rs('watch');
 });
 

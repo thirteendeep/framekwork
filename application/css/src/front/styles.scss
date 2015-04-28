@@ -1,8 +1,9 @@
-@import "modules/modules";
+@import "settings";
 
 @import "vendor/normalize";
-@import "vendor/foundation";
 @import "vendor/font-awesome/font-awesome";
+
+@import "modules/modules";
 
 @import "partials/app";
 
