@@ -416,7 +416,7 @@ $visibility-breakpoint-queries:
         * {
           background: transparent !important;
           box-shadow: none !important;
-          color: $black !important; /* Black prints faster: h5bp.com/s */
+          color: #000 !important; /* Black prints faster: h5bp.com/s */
           text-shadow: none !important;
         }
         .show-for-print { display: block; }
@@ -442,7 +442,7 @@ $visibility-breakpoint-queries:
 
         pre,
         blockquote {
-          border: 1px solid $aluminum;
+          border: 1px solid gray;
           page-break-inside: avoid;
         }
 

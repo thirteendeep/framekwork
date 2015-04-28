@@ -49,10 +49,10 @@ $ gulp
 
 To run individual tasks, use `gulp <task> <othertask>`.
 
-* List of tasks
-	* watch-sass
-	* css
-	* js
+
+* watch-sass
+* css
+* js
 
 
 ---
