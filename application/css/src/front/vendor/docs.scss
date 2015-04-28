@@ -1,0 +1,24 @@
+.docs {
+    font-family: 'Open Sans', sans-serif;
+
+    h1 {
+        font-size: rem-calc(50);
+        margin-top: rem-calc(30);
+        margin-bottom: rem-calc(30);
+        text-transform: uppercase;
+        color:#1982c4;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: rem-calc(30);
+        font-weight: bold;
+    }
+    h3 {
+        font-size: rem-calc(25);
+    }
+    
+    .block-grid {
+    }
+
+
+}
