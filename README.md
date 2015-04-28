@@ -19,11 +19,6 @@ http://site.local/gui/
 ```
 
 ```
-/application/view/integration/index.php 
-http://site.local/integration/
-```
-
-```
 /application/view/integration/team.php 
 http://site.local/integration/team
 ```
