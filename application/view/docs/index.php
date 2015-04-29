@@ -6,8 +6,6 @@
 
         </div>
     </div>
-    
-       
   <hr>
 <?php
 include('/application/view/docs/components/grid.php');

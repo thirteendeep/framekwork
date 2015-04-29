@@ -29,10 +29,5 @@
         border-radius: 3px;
     }
 
-    &.ticket:before {
-        @include fa-icon();
-        content: $fa-var-ticket;
-        padding-right:5px;
-    }
     
 }

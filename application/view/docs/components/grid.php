@@ -14,11 +14,3 @@
         <p><strong>Foundation grid is mobile-first</strong>. Code for small screens first, and larger devices will inherit those styles. Customize for larger screens as necessary.</p>
     </div>
 </div>
-
-<script charset="utf-8" src="//js.hsforms.net/forms/current.js"></script>
-<script>
-  hbspt.forms.create({ 
-    portalId: '502888',
-    formId: 'ee97fdb9-2e6f-48bb-93ca-013d0959c10d'
-  });
-</script>
