@@ -3,6 +3,8 @@
 * <a href="http://site.local/docs" target="_blank">Documentation</a>
 * [Routing](#Routing)
 * [Gulp](#getting-started-with-gulp)
+* [Grid](#grid)
+* [Block grid](#block-grid)
 
 ---
 
@@ -133,10 +135,34 @@ Center your columns by adding a class of `small-centered` to your `column`. Larg
 </div>
 ```
 
+#### Block Grid
+Block grids give you a way to evenly split contents of a list within the grid. If you wanted to create a row of five images or paragraphs that need to stay evenly spaced no matter the screen size, the block grid is for you.
 
+### Basic
+Use a simple `small-block-grid-#` class to code up the block grid and specify the number of items in a row.
 
+```html
+<ul class="small-block-grid-3">
+  <li><!-- Your content goes here --></li>
+  <li><!-- Your content goes here --></li>
+  <li><!-- Your content goes here --></li>
+</ul>
+```
 
-[Block grid](http://foundation.zurb.com/docs/components/block_grid.html)
+### Advanced
+Use additional classes to specify a different number of items in a row for each screen size.
+
+```html
+<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+  <li><!-- Your content goes here --></li>
+  <li><!-- Your content goes here --></li>
+  <li><!-- Your content goes here --></li>
+  <li><!-- Your content goes here --></li>
+  <li><!-- Your content goes here --></li>
+  <li><!-- Your content goes here --></li>
+</ul>
+```
+
 
 [Visibility](http://foundation.zurb.com/docs/components/visibility.html)
 
