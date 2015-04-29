@@ -79,31 +79,68 @@ Foundation is mobile-first. Code for small screens first, and larger devices wil
   <div class="small-6 large-8 columns">...</div>
   <div class="small-12 large-2 columns">...</div>
 </div>
+```
+
+### Advanced
+You can nest the grids indefinitely, though at a certain point it will get absurd.
+
+```html
 <div class="row">
-  <div class="small-3 columns">...</div>
-  <div class="small-9 columns">...</div>
-</div>
-<div class="row">
-  <div class="large-4 columns">...</div>
-  <div class="large-8 columns">...</div>
-</div>
-<div class="row">
-  <div class="small-6 large-5 columns">...</div>
-  <div class="small-6 large-7 columns">...</div>
-</div>
-<div class="row">
-  <div class="large-6 columns">...</div>
-  <div class="large-6 columns">...</div>
+  <div class="small-8 columns">8
+    <div class="row">
+      <div class="small-8 columns">8 Nested
+        <div class="row">
+          <div class="small-8 columns">8 Nested Again</div>
+          <div class="small-4 columns">4</div>
+        </div>
+      </div>
+      <div class="small-4 columns">4</div>
+    </div>
+  </div>
+  <div class="small-4 columns">4</div>
 </div>
 ```
 
-[Grid](http://foundation.zurb.com/docs/components/grid.html)
+### Collapse/Uncollapse Rows
+The collapse class lets you remove column gutters (padding).
+
+There are times when you won't want each media query to be collapsed or uncollapsed. In this case, use the media query size you want and collapse or uncollapse and add that to your row element. Example shows no gutter at small media size and then adds the gutter to columns at medium.
+
+```html
+<div class="row medium-uncollapse large-collapse">
+    <div class="small-6 columns">
+        Removes gutter at large media query
+    </div>
+    <div class="small-6 columns">
+        Removes gutter at large media query
+    </div>
+</div>
+```
+
+### Centered Columns
+Center your columns by adding a class of `small-centered` to your `column`. Large will inherit small centering by default, but you can also center solely on large by applying a `large-centered` class. To uncenter on large screens use `large-uncentered`.
+
+```html
+<div class="row">
+  <div class="small-3 small-centered columns">3 centered</div>
+</div>
+<div class="row">
+  <div class="small-6 large-centered columns">6 centered</div>
+</div>
+<div class="row">
+  <div class="small-9 small-centered large-uncentered columns">9 centered</div>
+</div>
+<div class="row">
+  <div class="small-11 small-centered columns">11 centered</div>
+</div>
+```
+
+
+
 
 [Block grid](http://foundation.zurb.com/docs/components/block_grid.html)
 
 [Visibility](http://foundation.zurb.com/docs/components/visibility.html)
-
-[Px to rem](http://bourbon.io/docs/#px-to-rem)
 
 [Text input](http://bourbon.io/docs/#text-inputs)
 
