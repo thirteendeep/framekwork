@@ -135,7 +135,7 @@ Center your columns by adding a class of `small-centered` to your `column`. Larg
 </div>
 ```
 
-#### Block Grid
+# Block Grid
 Block grids give you a way to evenly split contents of a list within the grid. If you wanted to create a row of five images or paragraphs that need to stay evenly spaced no matter the screen size, the block grid is for you.
 
 ### Basic
