@@ -5,6 +5,8 @@
 * [Gulp](#getting-started-with-gulp)
 * [Grid](#grid)
 * [Block grid](#block-grid)
+* [Visibility](#visibility)
+* [Text Inputs](#text-inputs)
 
 ---
 
@@ -213,7 +215,7 @@ Finally, if you want to hide some content but still make it accessible for scree
   <strong class="hidden-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
 </p>
 ```
-To reverse the rules defined by hidden, use the visible visibility classes.
+To reverse the rules defined by __hidden__, use the __visible__ visibility classes.
 
 ### Orientation Detection
 This straightforward example shows how two strings of text determine whether or not an element is visible in different orientations. This will change on mobile devices when you rotate the device. On desktop, the orientation is almost always reported as landscape.
@@ -226,19 +228,33 @@ This straightforward example shows how two strings of text determine whether or 
 ```
 
 
+# Text Inputs
+Generates variables for all HTML text-based inputs. Please note that you must use interpolation on the variable: `#{$all-text-inputs}`.
 
-[Visibility](http://foundation.zurb.com/docs/components/visibility.html)
+```css
+#{$all-text-inputs} {
+  border: 1px solid #f00;
+}
 
-[Text input](http://bourbon.io/docs/#text-inputs)
+#{$all-text-inputs-focus},
+#{$all-text-inputs-hover} {
+  border: 1px solid #0f0;
+}
 
----
+#{$all-text-inputs-active} {
+  border: 1px solid #00f;
+}
+```
 
+# rem
 Why size your text with EMs in CSS?
 
 Style sheets become easier to maintain because all text set in EMs scale to the body font-size. Only one element's font-size needs to change instead of individually changing the font-size of each element.
 
 Accessibility is increased for end-users because text is scaled based on their preferences rather than set statically in pixels. Additionally, end-users can use hot keys to scale the text in all browsers. Many people have difficulty reading small text on a computer screen.
 
-
-
-http://google-code-prettify.googlecode.com/svn/trunk/README.html
+```css
+.node {
+	font-size: rem-calc(20);
+}
+```
