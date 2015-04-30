@@ -163,6 +163,69 @@ Use additional classes to specify a different number of items in a row for each 
 </ul>
 ```
 
+# Visibility Classes
+Visibility classes let you show or hide elements based on screen size or device orientation. You can use visibility classes to control which elements users see depending on their browsing environment.
+
+### Show by Screen Size
+In this example, we use the __show__ visibility classes to show certain strings of text based on the device on which users view a page. If their browser meets the class's conditions, the element will be shown. If not, it will be hidden.
+
+```html
+<p class="panel">
+  <strong class="show-for-small-only">This text is shown only on a small screen.</strong>
+  <strong class="show-for-medium-up">This text is shown on medium screens and up.</strong>
+  <strong class="show-for-medium-only">This text is shown only on a medium screen.</strong>
+  <strong class="show-for-large-up">This text is shown on large screens and up.</strong>
+  <strong class="show-for-large-only">This text is shown only on a large screen.</strong>
+  <strong class="show-for-xlarge-up">This text is shown on xlarge screens and up.</strong>
+  <strong class="show-for-xlarge-only">This text is shown only on an xlarge screen.</strong>
+  <strong class="show-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong>
+</p>
+```
+
+### Hide by Screen Size
+This example shows the opposite: It uses the __hide__ visibility classes to state which elements should disappear based on your device's screen size or orientation. Users will see elements on every browser __except__ those that meet these conditions.
+
+````html
+<p class="panel">
+  <strong class="hide-for-small-only">You are <em>not</em> on a small screen.</strong>
+  <strong class="hide-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or xxlarge screen.</strong>
+  <strong class="hide-for-medium-only">You are <em>not</em> on a medium screen.</strong>
+  <strong class="hide-for-large-up">You are <em>not</em> on a large, xlarge, or xxlarge screen.</strong>
+  <strong class="hide-for-large-only">You are <em>not</em> on a large screen.</strong>
+  <strong class="hide-for-xlarge-up">You are <em>not</em> on an xlarge screen and up.</strong>
+  <strong class="hide-for-xlarge-only">You are <em>not</em> on an xlarge screen.</strong>
+  <strong class="hide-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
+</p>
+```
+
+### Responsive Visibility
+Finally, if you want to hide some content but still make it accessible for screen readers, use the __hidden__ visibility classes. Do not confuse these classes with __hide__ visibility classes. Use these classes in conjunction with the __hide__ and __show__ visibility classes to control complex layouts while offering accessibility for those using screen readers.
+
+```html
+<p class="panel">
+  <strong class="hidden-for-small-only">You are <em>not</em> on a small screen.</strong>
+  <strong class="hidden-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or xxlarge screen.</strong>
+  <strong class="hidden-for-medium-only">You are <em>not</em> on a medium screen.</strong>
+  <strong class="hidden-for-large-up">You are <em>not</em> on a large, xlarge, or xxlarge screen.</strong>
+  <strong class="hidden-for-large-only">You are <em>not</em> on a large screen.</strong>
+  <strong class="hidden-for-xlarge-up">You are <em>not</em> on an xlarge screen and up.</strong>
+  <strong class="hidden-for-xlarge-only">You are <em>not</em> on an xlarge screen.</strong>
+  <strong class="hidden-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
+</p>
+```
+To reverse the rules defined by hidden, use the visible visibility classes.
+
+### Orientation Detection
+This straightforward example shows how two strings of text determine whether or not an element is visible in different orientations. This will change on mobile devices when you rotate the device. On desktop, the orientation is almost always reported as landscape.
+
+```html
+<p class="panel">
+  <strong class="show-for-landscape">You are in landscape orientation.</strong>
+  <strong class="show-for-portrait">You are in portrait orientation.</strong>
+</p>
+```
+
+
 
 [Visibility](http://foundation.zurb.com/docs/components/visibility.html)
 
