@@ -7,7 +7,7 @@
 * [Block grid](#block-grid)
 * [Visibility](#visibility-classes)
 * [Text Inputs](#text-inputs)
-* [Rem units (root em)](#text-inputs)
+* [Rem units (root em)](#rem-units-root-em)
 
 ---
 
