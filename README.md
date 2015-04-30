@@ -5,7 +5,7 @@
 * [Gulp](#getting-started-with-gulp)
 * [Grid](#grid)
 * [Block grid](#block-grid)
-* [Visibility](#visibility)
+* [Visibility](#visibility-classes)
 * [Text Inputs](#text-inputs)
 
 ---
