@@ -7,6 +7,7 @@
 * [Block grid](#block-grid)
 * [Visibility](#visibility-classes)
 * [Text Inputs](#text-inputs)
+* [Rem units (root em)](#text-inputs)
 
 ---
 
@@ -246,7 +247,7 @@ Generates variables for all HTML text-based inputs. Please note that you must us
 }
 ```
 
-# rem
+# Rem units (root em)
 Why size your text with EMs in CSS?
 
 Style sheets become easier to maintain because all text set in EMs scale to the body font-size. Only one element's font-size needs to change instead of individually changing the font-size of each element.
