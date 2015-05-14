@@ -18,19 +18,19 @@ var rs = require('run-sequence');
 
 // Build Production Files, the Default Task
 gulp.task('default', function() {
-    rs('build-clean-css', 'sass', 'build-clean-js', 'scripts');
+    rs('sass', 'build-clean-js', 'scripts');
 });
 
 gulp.task('css', function() {
-    rs('build-clean-css', 'sass');
+    rs('sass');
 });
 
 gulp.task('js', function() {
-    rs('build-clean-js', 'scripts');
+    rs('scripts');
 });
 
 // Build Production Files, and watch
-gulp.task('watch-sass', ['css'], function(){
+gulp.task('local', ['css'], function(){
     rs('watch');
 });
 
@@ -42,30 +42,13 @@ gulp.task('sass', function () {
     .pipe(sass({errLogToConsole: true}))
     .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7", { cascade : true }))
     .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest(css_dist))
+    .pipe(gulp.dest('/public/css/dist'))
     /* minify */
     .pipe(minifyCSS())
     .pipe(rename('styles.min.css'))
-    .pipe(gulp.dest(css_dist));
+    .pipe(gulp.dest('/public/css/dist'));
 });
 
-
-
-/* Clean dist css folder */
-gulp.task('build-clean-css', function() {
-    return gulp.src([
-        css_dist + '*',
-        ])
-    .pipe($.clean());
-});
-
-/* Clean dist js folder */
-gulp.task('build-clean-js', function() {
-    return gulp.src([
-        'application/js/dist/*',
-        ])
-    .pipe($.clean());
-});
 
 // Compile and Automatically Prefix Scripts
 gulp.task('scripts', function () {
